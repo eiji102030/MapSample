@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		076DCC731EACE74600C493A2 /* Landmarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076DCC721EACE74600C493A2 /* Landmarks.swift */; };
 		07E53E591EACDC6200CD6F92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E53E581EACDC6200CD6F92 /* AppDelegate.swift */; };
 		07E53E5B1EACDC6200CD6F92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E53E5A1EACDC6200CD6F92 /* ViewController.swift */; };
 		07E53E5E1EACDC6200CD6F92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E53E5C1EACDC6200CD6F92 /* Main.storyboard */; };
 		07E53E601EACDC6200CD6F92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E53E5F1EACDC6200CD6F92 /* Assets.xcassets */; };
 		07E53E631EACDC6200CD6F92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E53E611EACDC6200CD6F92 /* LaunchScreen.storyboard */; };
+		07E53E6C1EACDCD600CD6F92 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E53E6B1EACDCD600CD6F92 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		076DCC721EACE74600C493A2 /* Landmarks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Landmarks.swift; sourceTree = "<group>"; };
 		07E53E551EACDC6200CD6F92 /* MapSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07E53E581EACDC6200CD6F92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07E53E5A1EACDC6200CD6F92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		07E53E5F1EACDC6200CD6F92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07E53E621EACDC6200CD6F92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07E53E641EACDC6200CD6F92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07E53E6B1EACDCD600CD6F92 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07E53E6C1EACDCD600CD6F92 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				07E53E571EACDC6200CD6F92 /* MapSample */,
 				07E53E561EACDC6200CD6F92 /* Products */,
+				07E53E6A1EACDCD600CD6F92 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +66,17 @@
 				07E53E5F1EACDC6200CD6F92 /* Assets.xcassets */,
 				07E53E611EACDC6200CD6F92 /* LaunchScreen.storyboard */,
 				07E53E641EACDC6200CD6F92 /* Info.plist */,
+				076DCC721EACE74600C493A2 /* Landmarks.swift */,
 			);
 			path = MapSample;
+			sourceTree = "<group>";
+		};
+		07E53E6A1EACDCD600CD6F92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07E53E6B1EACDCD600CD6F92 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E53E5B1EACDC6200CD6F92 /* ViewController.swift in Sources */,
+				076DCC731EACE74600C493A2 /* Landmarks.swift in Sources */,
 				07E53E591EACDC6200CD6F92 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +283,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.edu.MapSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -280,6 +297,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.edu.MapSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -302,6 +320,7 @@
 				07E53E691EACDC6200CD6F92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
